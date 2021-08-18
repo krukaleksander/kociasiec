@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Galery from "./components/Galery";
@@ -6,10 +7,7 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <Router>
-      <div>
-        <h1>Kociasiec.pl</h1>
-      </div>
-
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <Home />

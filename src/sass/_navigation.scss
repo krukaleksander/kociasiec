@@ -1,0 +1,47 @@
+.navigation {
+
+    &__trigger {
+        font-size: 30px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: rgb(206, 116, 131);
+    }
+    &__nav {
+        position: fixed;
+        top: 80px;
+        right: -250px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 280px;
+        border: 2px solid rgb(206, 116, 131);
+        border-radius: 1px;
+        padding: 5px;
+        justify-content: center;
+        transition: .5s;
+        ul {
+            list-style-type: none;
+            text-align: center;
+            line-height: 160%;          
+            letter-spacing: 2px;
+            margin: 0 auto;
+            padding: 5px;
+
+           
+            li {
+                
+                a {
+                    text-decoration: none;
+                    color: rgb(206, 116, 131);
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    &__nav--open {
+        right: 0px;
+    }   
+}
