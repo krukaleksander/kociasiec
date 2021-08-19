@@ -3,7 +3,7 @@
   position: fixed;
   top: 15px;
   right: 15px;
-  color: #ce7483;
+  color: #3c6ca8;
 }
 
 .navigation__nav {
@@ -20,7 +20,7 @@
           flex-direction: column;
   width: 220px;
   height: 280px;
-  border: 2px solid #ce7483;
+  border: 1px solid #3c6ca8;
   border-radius: 1px;
   padding: 5px;
   -webkit-box-pack: center;
@@ -41,11 +41,163 @@
 
 .navigation__nav ul li a {
   text-decoration: none;
-  color: #ce7483;
+  color: #3c6ca8;
   font-size: 20px;
 }
 
 .navigation__nav--open {
   right: 0px;
+}
+
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+.header h1 {
+  border-bottom-width: 29px;
+  padding-top: 0.96em;
+  background: #2275a6 url("../img/sun-rays.png") no-repeat scroll 50% 100%;
+  background-size: auto;
+  background-size: auto 30px;
+  border-bottom: 29px solid #fff;
+  position: relative;
+  padding-top: 30px;
+  margin: 0;
+  font-size: 2em;
+}
+
+.header h1 a {
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+  color: #a9e1ff;
+  text-decoration: none;
+}
+
+.header img {
+  display: block;
+  position: absolute;
+  bottom: -49px;
+  left: 50%;
+  height: 72px;
+  margin-left: -128px;
+}
+
+.banner {
+  background: url(../img/people.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  padding-top: 0.8em;
+  padding-bottom: 2em;
+}
+
+.banner p {
+  margin: 0px;
+  width: 80%;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 0 1em #101c2c, 0 0 0.6em #101c2c, 0 0 0.8em #111, 0 0 0.2em #111, 0 0 1em #111;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  font-size: 20px;
+  max-width: 20em;
+  margin: 1em auto 0;
+}
+
+.banner p strong {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.goals {
+  padding: 1.6em 0 1.4em;
+  overflow: hidden;
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+  background: #10496c url(../img/goalsbg.png) repeat scroll 50% 50%;
+  background-size: 32px 32px;
+}
+
+.goals ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.goals ul li {
+  width: 100%;
+  float: none;
+  margin: 0 0 1.5em;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.goals ul li span {
+  border-radius: 50%;
+  display: block;
+  line-height: 1.05;
+  width: 0.95em;
+  height: 0.95em;
+  margin: 0 auto 0.1em;
+  font-size: 50px;
+  margin-left: 0.25em;
+  float: left;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+
+.goals ul li p {
+  padding-left: 5.35em;
+  text-align: left;
+  -webkit-transition: none 0.35s ease;
+  transition: none 0.35s ease;
+  font-size: 15px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.goals ul li p strong {
+  margin-bottom: -0.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  font-size: 18px;
+}
+
+.goals ul li.fast span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2598ad), to(#257786));
+  background: linear-gradient(to bottom, #2598ad 0%, #257786 100%);
+}
+
+.goals ul li.best span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #50ae4e), to(#469144));
+  background: linear-gradient(to bottom, #50ae4e 1%, #469144 100%);
+}
+
+.goals ul li.pro span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ceb037), to(#b29b3f));
+  background: linear-gradient(to bottom, #ceb037 1%, #b29b3f 100%);
+}
+
+.goals ul li.price span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #cf335d), to(#ad3757));
+  background: linear-gradient(to bottom, #cf335d 1%, #ad3757 100%);
+}
+
+.page {
+  width: 96%;
+  margin: 0 auto;
+}
+
+body {
+  background: #3c6ca8;
+  color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=main.min.css.map */

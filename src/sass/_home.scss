@@ -1,0 +1,109 @@
+.banner {
+    background: url(../img/people.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    padding-top: 0.8em;
+    padding-bottom: 2em;
+    p {
+        margin: 0px;
+        width: 80%;
+        text-align: center;
+        line-height: 1.2;
+        text-shadow: 0 0 1em #101c2c,
+        0 0 0.6em #101c2c,
+        0 0 0.8em #111,
+        0 0 0.2em #111,
+        0 0 1em #111;
+        transition: all 0.35s ease;
+        font-size: 20px;
+        max-width: 20em;   
+        margin: 1em auto 0;       
+      
+        strong {
+            text-transform: uppercase;
+            font-size: 0.875em;
+            font-weight: bold;            
+        }
+
+    }
+}
+
+.goals {    
+     padding: 1.6em 0 1.4em; 
+     overflow: hidden;
+     border-top: 8px solid #fff;
+     border-bottom: 8px solid #fff;
+     background: #10496c url(../img/goalsbg.png) repeat scroll 50% 50%;
+     background-size: 32px 32px;
+     ul {
+         list-style: none;
+         width: 80%;
+         margin: 0 auto;
+         padding: 0;
+         li {
+             width: 100%;
+             float: none;
+             margin: 0 0 1.5em;
+             text-align: center;
+             font-weight: normal;
+             line-height: 1.3;
+             span {
+                 border-radius: 50%;
+                 display: block;
+                 line-height: 1.05;
+                 width: 0.95em;
+                 height: 0.95em;
+                 margin: 0 auto 0.1em;
+                 font-size: 50px;
+                 margin-left: 0.25em;
+                 float: left;              
+                 text-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+             
+             }
+             p {
+                 padding-left: 5.35em;
+                 text-align: left;
+                 transition: none 0.35s ease;
+                 font-size: 15px;
+                 margin: 0;
+                 font-weight: normal;
+                 line-height: 1.3;
+                 strong {
+                     margin-bottom: -0.1em;
+                     text-transform: uppercase;
+                     letter-spacing: 1px;
+                     display: block;
+                     font-size: 18px;
+                 }
+             }
+         }
+         li.fast {
+              span {
+                  background: linear-gradient(to bottom, #2598ad 0%, #257786 100%);
+              }
+            
+         }
+         li.best {
+             span {
+                 background: linear-gradient(to bottom, #50ae4e 1%, #469144 100%);
+             }
+
+         }
+         li.pro {
+             span {
+                 background: linear-gradient(to bottom, #ceb037 1%, #b29b3f 100%);
+             }
+
+         }
+         li.price {
+             span {
+                 background: linear-gradient(to bottom, #cf335d 1%, #ad3757 100%);
+             }
+
+         }
+     }
+}
+.page {
+    width: 96%;
+    margin: 0 auto;
+}

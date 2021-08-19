@@ -1,2 +1,11 @@
 @import './sets.scss';
 @import './navigation';
+@import './header';
+@import './home';
+body {
+    background: #3c6ca8;
+    color: white;
+}
+.wrapper {
+    min-height: 100vh;      
+}

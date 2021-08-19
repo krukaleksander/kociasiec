@@ -5,7 +5,7 @@
         position: fixed;
         top: 15px;
         right: 15px;
-        color: rgb(206, 116, 131);
+        color: #3c6ca8;
     }
     &__nav {
         position: fixed;
@@ -16,7 +16,7 @@
         flex-direction: column;
         width: 220px;
         height: 280px;
-        border: 2px solid rgb(206, 116, 131);
+        border: 1px solid #3c6ca8;   
         border-radius: 1px;
         padding: 5px;
         justify-content: center;
@@ -34,7 +34,7 @@
                 
                 a {
                     text-decoration: none;
-                    color: rgb(206, 116, 131);
+                    color: #3c6ca8;
                     font-size: 20px;
                 }
             }

@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    z-index: 20; 
+        h1 {
+            border-bottom-width: 29px;
+            padding-top: 0.96em;
+            background: #2275a6 url('../img/sun-rays.png') no-repeat scroll 50% 100%;
+            background-size: auto;
+            background-size: auto 30px;
+            border-bottom: 29px solid #fff;     
+            position: relative;
+            padding-top: 30px;
+            margin: 0;
+            font-size: 2em;
+            a {
+                transition: color 0.35s ease;
+                color: #a9e1ff;
+                text-decoration: none;
+            }
+        }
+img {
+   display: block;   
+   position: absolute;
+   bottom: -49px;
+   left: 50%;
+   height: 72px;
+   margin-left: -128px;
+}       
+}
