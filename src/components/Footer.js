@@ -5,11 +5,13 @@ export default function Footer() {
     <footer>
       <div className="page">
         <div>
-          <div className="shield">
-            <BiShieldAlt2 />
+          <div className="shield-title-wrapper">
+            <div className="shield">
+              <BiShieldAlt2 />
+            </div>
+            <h2>kocia sieć</h2>
+            <h3>bezpieczeństwo to podstawa</h3>
           </div>
-          <h2>kocia sieć</h2>
-          <h3>bezpieczeństwo to podstawa</h3>
         </div>
         <div className="social">
           <p>

@@ -1,6 +1,11 @@
 footer {
     padding: 12px, 20px;
     .page {
+        @include mq(medium) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         div {
             width: 250px;
             margin: 20px auto;
