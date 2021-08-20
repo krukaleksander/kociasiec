@@ -19,18 +19,30 @@ footer {
                     margin: 0;
                     padding: 0;
                 }
+                 @include mq(medium) {
+                     font-size: 80px;
+                     left: -80px;
+                 }
             }
             h2 {
                 text-transform: uppercase;
                 position: relative;
                 margin: 0;
                 line-height: 1;
+                font-size: 20px;
+                 @include mq(medium) {
+                     font-size: 40px;
+                 }
             }
             h3 {
                 color: #757474;
                 font-size: 15px;
                 font-weight: 300;
                 margin: 0;
+                 @include mq(medium) {
+                     font-size: 25px;
+                     min-width: 400px;
+                 }
             }
         }
         .social {

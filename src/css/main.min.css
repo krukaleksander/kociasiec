@@ -57,7 +57,6 @@
 
 .header h1 {
   border-bottom-width: 29px;
-  padding-top: 0.96em;
   background: #2275a6 url("../img/sun-rays.png") no-repeat scroll 50% 100%;
   background-size: auto;
   background-size: auto 30px;
@@ -66,6 +65,14 @@
   padding-top: 30px;
   margin: 0;
   font-size: 2em;
+}
+
+@media (min-width: 750px) {
+  .header h1 {
+    border-bottom: 80px solid #fff;
+    padding-top: 85px;
+    background-size: auto 2.65625em;
+  }
 }
 
 .header h1 a {
@@ -82,6 +89,18 @@
   left: 50%;
   height: 72px;
   margin-left: -128px;
+}
+
+@media (min-width: 750px) {
+  .header img {
+    height: 200px;
+    position: absolute;
+    bottom: -162%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    margin: 0;
+  }
 }
 
 .banner {
@@ -103,6 +122,13 @@
   font-size: 20px;
   max-width: 20em;
   margin: 1em auto 0;
+}
+
+@media (min-width: 750px) {
+  .banner p {
+    font-size: 30px;
+    margin-top: 65px;
+  }
 }
 
 .banner p strong {
@@ -202,6 +228,12 @@
   }
 }
 
+@media (min-width: 750px) {
+  .goals ul li span {
+    font-size: 110px;
+  }
+}
+
 .goals ul li p {
   padding-left: 5.35em;
   text-align: left;
@@ -222,6 +254,12 @@
   }
 }
 
+@media (min-width: 750px) {
+  .goals ul li p {
+    font-size: 20px;
+  }
+}
+
 .goals ul li p strong {
   margin-bottom: -0.1em;
   text-transform: uppercase;
@@ -234,6 +272,12 @@
   .goals ul li p strong {
     font-size: 13px;
     text-align: center;
+  }
+}
+
+@media (min-width: 750px) {
+  .goals ul li p strong {
+    font-size: 20px;
   }
 }
 
@@ -284,6 +328,12 @@
   }
 }
 
+@media (min-width: 750px) {
+  .call h1 {
+    font-size: 45px;
+  }
+}
+
 .call .button-container {
   background-color: #11486b;
   padding: 30px 5px;
@@ -293,13 +343,21 @@
 }
 
 .call .button-container .button {
-  width: 150px;
+  width: 180px;
   margin: 0 auto;
   padding: 10px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #50ae4e), to(#469144));
   background: linear-gradient(to bottom, #50ae4e 1%, #469144 100%);
   border: 5px solid white;
   border-radius: 20px;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .call .button-container .button {
+    width: 300px;
+    font-size: 40px;
+  }
 }
 
 .call .button-container .button span {
@@ -330,6 +388,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 750px) {
+  .call .email {
+    font-size: 25px;
   }
 }
 
@@ -386,11 +450,25 @@ footer .page div .shield {
   }
 }
 
+@media (min-width: 750px) {
+  footer .page div .shield {
+    font-size: 80px;
+    left: -80px;
+  }
+}
+
 footer .page div h2 {
   text-transform: uppercase;
   position: relative;
   margin: 0;
   line-height: 1;
+  font-size: 20px;
+}
+
+@media (min-width: 750px) {
+  footer .page div h2 {
+    font-size: 40px;
+  }
 }
 
 footer .page div h3 {
@@ -398,6 +476,13 @@ footer .page div h3 {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+}
+
+@media (min-width: 750px) {
+  footer .page div h3 {
+    font-size: 25px;
+    min-width: 400px;
+  }
 }
 
 footer .page .social p a {
@@ -426,5 +511,12 @@ body {
 
 .wrapper {
   min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */
