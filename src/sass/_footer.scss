@@ -4,6 +4,22 @@ footer {
         div {
             width: 250px;
             margin: 20px auto;
+            @include mq(small) {
+                position: relative;
+            }
+            .shield {
+                display: none;
+                @include mq(small) {
+                    display: block;
+                    position: absolute;
+                    top: -10px;
+                    left: -50px;
+                    width: 50px;
+                    font-size: 50px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
             h2 {
                 text-transform: uppercase;
                 position: relative;
