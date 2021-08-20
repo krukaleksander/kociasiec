@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Galery from "./components/Galery";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="wrapper">
@@ -25,6 +26,7 @@ const App = () => {
             <Contact />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

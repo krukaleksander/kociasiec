@@ -192,8 +192,114 @@
   margin: 0 auto;
 }
 
+.call {
+  background-color: #196288;
+  padding: 0 20;
+  overflow: hidden;
+}
+
+.call h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  margin: 0 auto 0.8em;
+  width: 80%;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+.call .button-container {
+  background-color: #11486b;
+  padding: 30px 5px;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.call .button-container .button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #50ae4e), to(#469144));
+  background: linear-gradient(to bottom, #50ae4e 1%, #469144 100%);
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+.call .button-container .button span {
+  padding: 5px;
+  vertical-align: text-top;
+}
+
+.call .button-container .button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.call .email {
+  padding: 8px 12px;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.call .email p {
+  clear: both;
+  text-align: center;
+  margin: 1.5em auto 0.5em;
+  width: 90%;
+}
+
+.call .email a {
+  display: block;
+  text-align: center;
+  color: #76c4ee;
+}
+
+footer {
+  padding: 12px, 20px;
+}
+
+footer .page div {
+  width: 250px;
+  margin: 20px auto;
+}
+
+footer .page div h2 {
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+  line-height: 1;
+}
+
+footer .page div h3 {
+  color: #757474;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
+footer .page .social p a {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0.1em;
+  color: #a9e1ff;
+  text-decoration: none;
+}
+
+footer small {
+  display: block;
+  color: #757474;
+  font-weight: 300;
+  text-align: center;
+}
+
+html {
+  background: #2b2928 url(../img/footer.png) no-repeat fixed 50% 100%;
+  background-size: auto 220px;
+}
+
 body {
-  background: #3c6ca8;
   color: white;
 }
 

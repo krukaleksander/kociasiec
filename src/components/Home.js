@@ -1,6 +1,7 @@
 import React from "react";
 import { SiFastly } from "react-icons/si";
 import { GiWoodenFence, GiGearHammer, GiPriceTag } from "react-icons/gi";
+import { FiPhoneCall } from "react-icons/fi";
 export default function Home() {
   return (
     <main>
@@ -48,6 +49,23 @@ export default function Home() {
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="call">
+        <div className="page">
+          <h1>ZAPYTAJ O TERMIN JUŻ TERAZ</h1>
+        </div>
+        <div className="button-container">
+          <div className="button">
+            <span>
+              <FiPhoneCall />
+            </span>
+            <a href="tel:+48737877821">737 877 821</a>
+          </div>
+        </div>
+        <div className="email">
+          <p>Możesz również napisać maila: </p>
+          <a href="mailto:kontakt@kociasiec.pl">kontakt@kociasiec.pl</a>
         </div>
       </section>
     </main>

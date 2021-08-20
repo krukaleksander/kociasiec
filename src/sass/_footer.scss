@@ -1,0 +1,38 @@
+footer {
+    padding: 12px, 20px;
+    .page {
+        div {
+            width: 250px;
+            margin: 20px auto;
+            h2 {
+                text-transform: uppercase;
+                position: relative;
+                margin: 0;
+                line-height: 1;
+            }
+            h3 {
+                color: #757474;
+                font-size: 15px;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+        .social {
+            p {
+                a{
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 0 0.1em;
+                    color: #a9e1ff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    small {
+        display: block;
+        color: #757474;
+        font-weight: 300;
+        text-align: center;
+    }
+}

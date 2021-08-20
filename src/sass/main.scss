@@ -2,8 +2,12 @@
 @import './navigation';
 @import './header';
 @import './home';
-body {
-    background: #3c6ca8;
+@import './footer';
+html {
+    background: #2b2928 url(../img/footer.png) no-repeat fixed 50% 100%;
+    background-size: auto 220px;
+}
+body {  
     color: white;
 }
 .wrapper {
