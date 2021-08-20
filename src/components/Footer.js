@@ -10,7 +10,12 @@ export default function Footer() {
         </div>
         <div className="social">
           <p>
-            <a href="#">@BezpiecznyKot</a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/search/top?q=bezpieczny%20kot%20-%20siatki%20dla%20kot%C3%B3w"
+            >
+              @BezpiecznyKot
+            </a>
             <span>na Facebook</span>
             <small>Copyright © 2021</small>
           </p>
