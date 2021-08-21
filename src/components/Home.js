@@ -2,6 +2,7 @@ import React from "react";
 import { SiFastly } from "react-icons/si";
 import { GiWoodenFence, GiGearHammer, GiPriceTag } from "react-icons/gi";
 import { FiPhoneCall } from "react-icons/fi";
+import { SiMailchimp } from "react-icons/si";
 export default function Home() {
   return (
     <main>
@@ -66,6 +67,15 @@ export default function Home() {
         <div className="email">
           <p>Możesz również napisać maila: </p>
           <a href="mailto:kontakt@kociasiec.pl">kontakt@kociasiec.pl</a>
+          <div>
+            <p>lub zostawić</p>
+            <button className="email__trigger">
+              Wiadomość{" "}
+              <span>
+                <SiMailchimp />
+              </span>
+            </button>
+          </div>
         </div>
       </section>
     </main>

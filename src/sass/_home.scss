@@ -210,9 +210,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
         @include mq(medium) {
             font-size: 25px;
+        }
+        div {
+@include mq(small) {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+            p {
+                margin-top: 10px;
+            }
         }
         p {
             clear: both;
@@ -229,6 +242,21 @@
             display: block;
             text-align: center;
             color: #76c4ee;
+        }
+        &__trigger {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            background: linear-gradient(to bottom, #2598ad 0%, #257786 100%);
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            @include mq(small) {
+                margin: 0;
+            }
+            
         }
     }
 }
