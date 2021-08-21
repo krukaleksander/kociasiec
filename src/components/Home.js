@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SiFastly } from "react-icons/si";
 import { GiWoodenFence, GiGearHammer, GiPriceTag } from "react-icons/gi";
 import { FiPhoneCall } from "react-icons/fi";
@@ -9,6 +9,12 @@ export default function Home() {
   const handleShowContactForm = (value) => {
     setShowContactForm(value);
   };
+  useEffect(() => {
+    if (showContactForm)
+      document
+        .getElementById("contactForm")
+        .scrollIntoView({ behavior: "smooth" });
+  }, [showContactForm]);
   return (
     <main>
       <div className="banner">

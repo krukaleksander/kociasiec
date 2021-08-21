@@ -557,13 +557,7 @@ footer small {
 }
 
 #contactForm {
-  width: 250px;
   height: auto;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background: -webkit-gradient(linear, left top, left bottom, from(#0D1544), to(#272F5D));
   background: linear-gradient(180deg, #0D1544, #272F5D);
   -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
@@ -573,6 +567,15 @@ footer small {
           box-sizing: border-box;
   font-size: 20px;
   z-index: 99;
+  position: relative;
+}
+
+@media (min-width: 750px) {
+  #contactForm {
+    max-width: 600px;
+    margin: 30px auto;
+    font-size: 30px;
+  }
 }
 
 #contactForm .close {
@@ -580,11 +583,9 @@ footer small {
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 20px;
-  border: 2px solid #a79d9d;
+  font-size: 40px;
   height: 25px;
   width: 25px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,12 +606,12 @@ footer small {
   font-size: 50px;
   margin: 0;
   text-align: center;
-  color: #a79d9d;
+  color: #d54c76;
 }
 
 #contactForm input {
   display: block;
-  width: 210px;
+  width: 90%;
   border: none;
   border-bottom: 1px solid #ddd;
   -webkit-transition: 0.2s;
@@ -625,6 +626,12 @@ footer small {
           box-sizing: border-box;
   margin: 16px auto 0 auto;
   font-size: 18px;
+}
+
+@media (min-width: 750px) {
+  #contactForm input {
+    font-size: 25px;
+  }
 }
 
 #contactForm .input-wrapper {
@@ -646,7 +653,7 @@ footer small {
 
 #contactForm textarea {
   display: block;
-  width: 210px;
+  width: 90%;
   border: none;
   border-bottom: 1px solid #ddd;
   -webkit-transition: 0.2s;
@@ -661,6 +668,12 @@ footer small {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
+}
+
+@media (min-width: 750px) {
+  #contactForm textarea {
+    font-size: 25px;
+  }
 }
 
 #contactForm button {
@@ -678,6 +691,12 @@ footer small {
   text-decoration: none;
   border-radius: 50px;
   margin: 30px auto 15px auto;
+}
+
+@media (min-width: 750px) {
+  #contactForm button {
+    font-size: 25px;
+  }
 }
 
 html {
