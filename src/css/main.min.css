@@ -699,6 +699,16 @@ footer small {
   }
 }
 
+#contactForm .error {
+  text-align: center;
+  color: #D54C76;
+}
+
+#contactForm .info {
+  text-align: center;
+  color: yellowgreen;
+}
+
 html {
   background: #2b2928 url(../img/footer.png) no-repeat fixed 50% 100%;
   background-size: auto 220px;
