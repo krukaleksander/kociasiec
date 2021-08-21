@@ -1,0 +1,102 @@
+#contactForm {
+    width: 250px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #0D1544, #272F5D);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 99;
+    .close {
+        color: #a79d9d;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        border: 2px solid #a79d9d;
+        height: 25px;
+        width: 25px;       
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1:nth-of-type(1) {       
+        margin-top: 30px; 
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        color: #a79d9d;
+    }
+    input {
+        display: block;
+        width: 210px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        outline: none;  
+        background-color: transparent;
+        position: relative;
+        padding: 10px 16px 10px 30px;
+        color: #fff;
+        font-family: lato;
+        box-sizing: border-box;
+        margin: 16px auto 0 auto;  
+        font-size: 18px;    
+    }
+    .input-wrapper {
+        position: relative;
+        label {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: #d54c76;
+        }
+        .message-label {
+          top: 20px;
+        }        
+    }
+    
+    textarea {
+        display: block;
+        width: 210px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        outline: none;
+        margin: 16px auto 0 auto;
+        height: 150px;
+        background-color: transparent;
+        padding: 10px 16px 10px 30px;
+        color: #fff;
+        font-family: lato;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+    button {
+        border: 1px solid #D54C76;      
+        transition: 0.2s;
+        padding: 10px 45px;
+        outline: none;
+        cursor: pointer;
+        background-color: #D54C76;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        border-radius: 50px;      
+        margin: 30px auto 15px auto;
+    }
+
+}

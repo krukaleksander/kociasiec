@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { SiFastly } from "react-icons/si";
 import { GiWoodenFence, GiGearHammer, GiPriceTag } from "react-icons/gi";
 import { FiPhoneCall } from "react-icons/fi";
 import { SiMailchimp } from "react-icons/si";
+import ContactForm from "./ContactForm";
 export default function Home() {
+  const [showContactForm, setShowContactForm] = useState(false);
+  const handleShowContactForm = (value) => {
+    setShowContactForm(value);
+  };
   return (
     <main>
       <div className="banner">
@@ -69,7 +74,10 @@ export default function Home() {
           <a href="mailto:kontakt@kociasiec.pl">kontakt@kociasiec.pl</a>
           <div>
             <p>lub zostawić</p>
-            <button className="email__trigger">
+            <button
+              className="email__trigger"
+              onClick={() => handleShowContactForm(true)}
+            >
               Wiadomość{" "}
               <span>
                 <SiMailchimp />
@@ -78,6 +86,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {showContactForm && (
+        <ContactForm handleShowContactForm={handleShowContactForm} />
+      )}
     </main>
   );
 }
