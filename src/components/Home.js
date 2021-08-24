@@ -4,6 +4,7 @@ import { GiWoodenFence, GiGearHammer, GiPriceTag } from "react-icons/gi";
 import { FiPhoneCall } from "react-icons/fi";
 import { SiMailchimp } from "react-icons/si";
 import ContactForm from "./ContactForm";
+import cat from "../img/cat_net.jpg";
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
   const handleShowContactForm = (value) => {
@@ -65,6 +66,7 @@ export default function Home() {
       </section>
       <section className="call">
         <div className="page">
+          <img src={cat} alt="kotek" className="cat-img" />
           <h1>ZAPYTAJ O TERMIN JUŻ TERAZ</h1>
         </div>
         <div className="button-container">
