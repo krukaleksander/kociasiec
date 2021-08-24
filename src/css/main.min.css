@@ -104,11 +104,39 @@
 }
 
 .banner {
-  background: url(../img/people.jpeg);
+  background: url(../img/cat_mobile.jpg);
   background-repeat: no-repeat;
-  background-position: 50%, 50%;
+  background-position-x: -90px;
   padding-top: 0.8em;
   padding-bottom: 2em;
+}
+
+@media (min-width: 500px) {
+  .banner {
+    background-position-x: unset;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 639px) {
+  .banner {
+    background-position-x: unset;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 750px) {
+  .banner {
+    background: url(../img/cat.jpg);
+    background-position-x: -180px;
+    background-position-y: -50px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .banner {
+    background-position-x: -50px;
+  }
 }
 
 .banner p {

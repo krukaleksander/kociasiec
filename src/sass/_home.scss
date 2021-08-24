@@ -1,9 +1,25 @@
 .banner {
-    background: url(../img/people.jpeg);
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
+    background: url(../img/cat_mobile.jpg);
+    background-repeat: no-repeat;   
+   background-position-x: -90px;
     padding-top: 0.8em;
     padding-bottom: 2em;
+    @media (min-width: 500px) {
+        background-position-x: unset;
+        background-size: cover;
+    }
+    @include mq(small) {
+        background-position-x: unset;
+        background-size: cover;
+    }
+    @include mq(medium) {
+        background: url(../img/cat.jpg);
+        background-position-x: -180px;
+        background-position-y: -50px;
+    }
+    @include mq(large) {
+        background-position-x: -50px;
+    }
     p {
         margin: 0px;
         width: 80%;
