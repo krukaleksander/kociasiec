@@ -74,7 +74,7 @@ export default function Home() {
             <span>
               <FiPhoneCall />
             </span>
-            <a href="tel:+48737877821">737 877 821</a>
+            <a href="tel:+48605271432">605 271 432</a>
           </div>
         </div>
         <div className="email">
