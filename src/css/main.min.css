@@ -614,8 +614,8 @@ footer small {
 
 #contactForm {
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0D1544), to(#272F5D));
-  background: linear-gradient(180deg, #0D1544, #272F5D);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d1544), to(#272f5d));
+  background: linear-gradient(180deg, #0d1544, #272f5d);
   -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -733,13 +733,13 @@ footer small {
 }
 
 #contactForm button {
-  border: 1px solid #D54C76;
+  border: 1px solid #d54c76;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   padding: 10px 45px;
   outline: none;
   cursor: pointer;
-  background-color: #D54C76;
+  background-color: #d54c76;
   text-transform: uppercase;
   font-size: 16px;
   color: #fff;
@@ -757,12 +757,58 @@ footer small {
 
 #contactForm .error {
   text-align: center;
-  color: #D54C76;
+  color: #d54c76;
 }
 
 #contactForm .info {
   text-align: center;
   color: yellowgreen;
+}
+
+.sending__info {
+  text-align: center;
+  color: #4b9cdb;
+}
+
+.sending__ring {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+  -webkit-animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+          animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@-webkit-keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 html {

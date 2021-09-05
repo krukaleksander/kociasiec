@@ -9,6 +9,7 @@ export default function ContactForm({ handleShowContactForm }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [info, setInfo] = useState("");
+  const [sending, setSending] = useState(false);
 
   const cleanFn = () => {
     setName("");
@@ -28,6 +29,7 @@ export default function ContactForm({ handleShowContactForm }) {
   };
   const handleSetMessage = () => {
     if (validateFn()) {
+      setSending(true);
       let data = new URLSearchParams();
 
       data.append("clientName", name);
@@ -41,6 +43,7 @@ export default function ContactForm({ handleShowContactForm }) {
         .then((text) => {
           setError("");
           setInfo(text);
+          setSending(false);
         })
         .then(() => cleanFn())
         .catch((err) => console.log(err));
@@ -98,7 +101,14 @@ export default function ContactForm({ handleShowContactForm }) {
       </div>
       {error && <p className="error">{error}</p>}
       {info && <p className="info">{info}</p>}
-      <button onClick={handleSetMessage}>Wyślij</button>
+      {!sending ? (
+        <button onClick={handleSetMessage}>Wyślij</button>
+      ) : (
+        <div className="sending">
+          <p className="sending__info">Wysyłanie wiadomości...</p>
+          <div className="sending__ring"></div>
+        </div>
+      )}
     </div>
   );
 }
